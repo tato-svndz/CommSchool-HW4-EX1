@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Google Search</title>
   </head>
   <body>
-    <form action="https://www.google.com/search" method="GET" target="_blank">
-      <legend>Enter Your Query</legend>
-      <input type="text" name="q" placeholder="Search Google" />
-      <input type="submit" value="Google Search" />
-    </form>
+    <div class="wrapper">
+      <img src="images/Google.png" alt="" />
+      <form action="https://www.google.com/search" method="GET" target="_blank">
+        <input class="searchBar" type="text" name="q" />
+        <span class="buttons">
+          <input
+            class="submitButtons search"
+            type="submit"
+            value="Google Search"
+          />
+          <input
+            class="submitButtons"
+            type="submit"
+            value="I'm Feeling Lucky"
+          />
+        </span>
+      </form>
+    </div>
   </body>
 </html>
